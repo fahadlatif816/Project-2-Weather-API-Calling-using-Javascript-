@@ -6,9 +6,67 @@
     <link rel="stylesheet" href="style.css">
     <title>Weather API Calling</title>
 </head>
-<body>
+<body onload="showAll()">
     
+    <div class="container">
+        <h1 class="headingText">Simple Weather App</h1>
+        <div class="searchCity">
+            <input type="text" class="inputField" id="cityNameSearch" placeholder="Search for a City . . . ">
+            <button onclick="getWeather()" class="submitButton">Submit</button>
+            <div class="weatherDetails">
+
+                <div class="city" id="city1">
+                    <div class="nameAndBadge">
+                        <div class="cityname" id="cityNameId1">Lahore<sup class="badge badge-warning" id="countryCodeId1">PK</sup></div>
+                    </div>
+                    <div class="cityTemperature" id="cityTemperatureId1">20 &#8451;</div>
+                    <div class="cityFavIcon"><i id="favIconCity1"></i></div>
+                    <div class="cityCurrentWeather" id="cityWeather1">Cold Breeze</div>
+                </div>
+
+                
+                <div class="city" id="city2">
+                    <div class="nameAndBadge">
+                        <div class="cityname" id="cityNameId2">Lahore<sup class="badge badge-warning" id="countryCodeId2">PK</sup></div>
+                    </div>
+                    <div class="cityTemperature" id="cityTemperatureId2">20 &#8451;</div>
+                    <div class="cityFavIcon"><i id="favIconCity2"></i></div>
+                    <div class="cityCurrentWeather" id="cityWeather2">Cold Breeze</div>
+                </div>
+
+                <div class="city" id="city3">
+                    <div class="nameAndBadge">
+                        <div class="cityname" id="cityNameId3">Lahore<sup class="badge badge-warning" id="countryCodeId3">PK</sup></div>
+                    </div>
+                    <div class="cityTemperature" id="cityTemperatureId3">20 &#8451;</div>
+                    <div class="cityFavIcon"><i class="fas fa-5x" id="favIconCity3"></i></div>
+                    <div class="cityCurrentWeather" >Cold Breeze</div>
+                </div>
+
+                <div class="city" id="city4">
+                    <div class="nameAndBadge">
+                        <div class="cityname" id="cityNameId4">Lahore<sup class="badge badge-warning" id="countryCodeId4">PK</sup></div>
+                    </div>
+                    <div class="cityTemperature" id="cityTemperatureId4">20 &#8451;</div>
+                    <div class="cityFavIcon"><i class="fas fa-5x" id="favIconCity4"></i></div>
+                    <div class="cityCurrentWeather" >Cold Breeze</div>
+                </div>
+
+                <div class="city" id="city5">
+                    <div class="nameAndBadge">
+                        <div class="cityname" id="cityNameId5">Lahore<sup class="badge badge-warning" id="countryCodeId5">PK</sup></div>
+                    </div>
+                    <div class="cityTemperature" id="cityTemperatureId5">20 &#8451;</div>
+                    <div class="cityFavIcon"><i class="fas fa-5x" id="favIconCity5"></i></div>
+                    <div class="cityCurrentWeather" >Cold Breeze</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/d95374f2ba.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
